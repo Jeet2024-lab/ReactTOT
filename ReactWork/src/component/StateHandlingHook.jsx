@@ -2,11 +2,15 @@ import React from 'react'
 import { useState } from 'react'
 
 function StateHandlingHook() {
-    const [count,setCount]=useSate(20);
+    function doIncrement(){
+  setCount(count+20);
+}
+    const [count,setCount]=useState(20);
   return (
     <>
     <h2>State Handling Hook</h2>
     <h2>Count={count}</h2>
+    <button onClick={doIncrement}>Increment</button>
   </>
   )
 }

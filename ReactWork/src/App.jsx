@@ -18,8 +18,8 @@ function doIncrement(){
       <h3><b>Information Technology</b></h3>
       <Gallery/>
       <StateHandlingHook/>
-      <h2>Count={count}</h2>
-      <button onClick={doIncrement}>Increment</button>
+      
+      
 
       
 
