@@ -9,7 +9,7 @@ const [width,setWidth]=useState(300);
 const [red,setRed]=useState(0);
 const [green,setGreen]=useState(0);
 const [blue,setBlue]=useState(0);
-const [imageRotate,setimageRotate]=useState(30);
+const [imageRotate,setimageRotate]=useState(90);
      function increaseHeight(){
         setHeight(height+30);
 
@@ -25,7 +25,7 @@ setWidth(width+30);
      }
 
       function setimageAngle(){
-        setimageRotate(imageRotate+45);
+        setimageRotate(imageRotate+90);
 
       }
 
