@@ -12,8 +12,8 @@ function Registration({regData}) {
   }
   return (
     <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Name</label>
+      <div className="form-group">
+        <label htmlFor="exampleInputEmail1">Name</label>
         <input
           type="text"
           onChange={(e) => setName(e.target.value)}
@@ -24,31 +24,31 @@ function Registration({regData}) {
         />
       </div>
       {name}
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
+      <div className="form-group">
+        <label htmlFor="exampleInputEmail1">Email address</label>
         <input
           type="email"
           onChange={(e) => setEmail(e.target.value)}
-          class="form-control"
+          className="form-control"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
           placeholder="Enter email"
         />
       </div>
       {email}
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
+      <div className="form-group">
+        <label htmlFor="exampleInputPassword1">Password</label>
         <input
           type="password"
           onChange={(e) => setPassword(e.target.value)}
-          class="form-control"
+          className="form-control"
           id="exampleInputPassword1"
           placeholder="Password"
         />
       </div>
       {password}
 
-      <button type="submit" onClick={captureData} class="btn btn-primary">
+      <button type="submit" onClick={captureData} className="btn btn-primary">
         Register
       </button>
     </form>
